@@ -1,0 +1,5 @@
+# Package folders
+node_modules
+
+# Exercism metadata folder
+.exercism
