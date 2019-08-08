@@ -46,8 +46,3 @@ Once you get a test passing, you can enable the next one by changing `xtest` to
 ## Source
 
 Inspired by an exercise created by a professor Della Paolera in Argentina
-
-## Submitting Incomplete Solutions
-
-It's possible to submit an incomplete solution so you can see how others have
-completed the exercise.
