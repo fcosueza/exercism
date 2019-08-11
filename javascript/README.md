@@ -1,2 +1,2 @@
 # Javascript
-Solutions to challenges in the javascript path.
+Solutions to challenges in [javascript track](https://exercism.io/tracks/javascript).
