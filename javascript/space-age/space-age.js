@@ -6,6 +6,7 @@ const earthOrbitPeriod = 31557600;
 
 // Planets orbital periods expressed in Earth years
 const planetsOrbitPeriod = {
+  earth: 1,
   mercury: 0.2408467,
   venus: 0.61519726,
   mars: 1.8808158,
@@ -17,13 +18,9 @@ const planetsOrbitPeriod = {
 
 // Function age
 const age = (planet, age) => {
-  let planetAge = age / earthOrbitPeriod;
+  const earhtAge = age / earthOrbitPeriod;
 
-  if (planet != "earth") {
-    planetAge /= planetsOrbitPeriod[planet];
-  }
-
-  return Number.parseFloat(planetAge.toFixed(precision));
+  return Number((earhtAge / planetsOrbitPeriod[planet]).toFixed(precision));
 };
 
 export { age };
