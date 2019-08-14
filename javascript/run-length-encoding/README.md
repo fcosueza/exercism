@@ -54,5 +54,3 @@ Once you get a test passing, you can enable the next one by changing `xtest` to
 ## Source
 
 Wikipedia [https://en.wikipedia.org/wiki/Run-length_encoding](https://en.wikipedia.org/wiki/Run-length_encoding)
-
-ompleted the exercise.
