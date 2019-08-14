@@ -55,7 +55,4 @@ Once you get a test passing, you can enable the next one by changing `xtest` to
 
 Wikipedia [https://en.wikipedia.org/wiki/Run-length_encoding](https://en.wikipedia.org/wiki/Run-length_encoding)
 
-## Submitting Incomplete Solutions
-
-It's possible to submit an incomplete solution so you can see how others have
-completed the exercise.
+ompleted the exercise.
