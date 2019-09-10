@@ -1,12 +1,21 @@
-//
-// This is only a SKELETON file for the 'Run Length Encoding' exercise. It's been provided as a
-// convenience to get you started writing code faster.
-//
+const encode = string => {
+  if (string === "") return "";
 
-export const encode = () => {
-  throw new Error("Remove this statement and implement this function");
+  const regex = /(.)\1*/g;
+
+  return string
+    .match(regex)
+    .map(el => (el.length < 2 ? el[0] : el.length.toString() + el[0]))
+    .join("");
 };
 
-export const decode = () => {
-  throw new Error("Remove this statement and implement this function");
+const decode = string => {
+  if (string === "") return "";
+
+  const outerRegex = /\D|\d+\D/g;
+  const innerRegex = /\d+/g;
+
+  return string.match(outerRegex);
 };
+
+export { encode, decode };
