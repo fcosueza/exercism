@@ -11,11 +11,6 @@ const encode = string => {
 
 const decode = string => {
   if (string === "") return "";
-
-  const outerRegex = /\D|\d+\D/g;
-  const innerRegex = /\d+/g;
-
-  return string.match(outerRegex);
 };
 
 export { encode, decode };

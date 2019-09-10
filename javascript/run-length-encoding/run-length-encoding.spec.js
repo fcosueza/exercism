@@ -33,11 +33,11 @@ describe("run-length decode a string", () => {
     expect(decode("")).toEqual("");
   });
 
-  test("decode string with single characters only", () => {
+  xtest("decode string with single characters only", () => {
     expect(decode("XYZ")).toEqual("XYZ");
   });
 
-  test("decode string with no single characters", () => {
+  xtest("decode string with no single characters", () => {
     expect(decode("2A3B4C")).toEqual("AABBBCCCC");
   });
 
