@@ -5,7 +5,7 @@ const encode = string => {
 
   return string
     .match(regex)
-    .map(el => (el.length < 2 ? el[0] : el.length.toString() + el[0]))
+    .map(el => (el.length < 2 ? el.charAt(0) : el.length.toString() + el.charAt(0)))
     .join("");
 };
 
