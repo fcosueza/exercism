@@ -5,12 +5,25 @@ const encode = string => {
 
   return string
     .match(regex)
-    .map(el => (el.length < 2 ? el.charAt(0) : el.length.toString() + el.charAt(0)))
+    .map(elem => elem.length < 2 ? elem.charAt(0) : elem.length.toString() + elem.charAt(0))
     .join("");
 };
 
 const decode = string => {
   if (string === "") return "";
+
+  const termRegex = /\d+\D|\D/g;
+  const numsRegex = /\d+/g;
+  const charRegex = /\D/g;
+
+  return string
+    .match(termRegex)
+    .map(elem => {
+      let num = parseInt(elem.match(numsRegex));
+
+      return num ? new Array(num).fill(elem.match(charRegex)).join("") : elem;
+    })
+    .join("");
 };
 
 export { encode, decode };
