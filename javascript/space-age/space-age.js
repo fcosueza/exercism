@@ -17,10 +17,7 @@ const planetsOrbitPeriod = {
 };
 
 // Function age
-const age = (planet, age) => {
-  const earhtAge = age / earthOrbitPeriod;
-
-  return Number((earhtAge / planetsOrbitPeriod[planet]).toFixed(precision));
-};
+const age = (planet, age) =>
+  Number(((age / earthOrbitPeriod) / planetsOrbitPeriod[planet]).toFixed(precision));
 
 export { age };
