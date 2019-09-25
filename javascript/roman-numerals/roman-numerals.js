@@ -14,15 +14,8 @@ const ROMAN = [
   ["I", 1]
 ];
 
-const toRoman = number => {
-  if (!Number.isInteger(number) || number < 0 || number > 3000) return "";
-
-  return ROMAN.reduce((acc, curr) => {
-      const [result, next] = acc;
-      const [letter, value] = curr;
-
-      return [result + letter.repeat(next / value), next % value];
-    }, ["", number])[0];
-};
+const toRoman = number => 
+  ROMAN.reduce((acc, curr) => 
+    [acc[0] + curr[0].repeat(acc[1] / curr[1]), acc[1] % curr[1]], ["", number])[0];
 
 export { toRoman };
