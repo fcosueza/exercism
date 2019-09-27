@@ -1,6 +1,3 @@
-// Age's precision
-const precision = 2;
-
 // Earth orbital period expressed in seconds (1 year = 31557600 seconds)
 const earthOrbitPeriod = 31557600;
 
@@ -17,7 +14,7 @@ const planetsOrbitPeriod = {
 };
 
 // Function age
-const age = (planet, age) =>
+const age = (planet, age, precision = 2) =>
   Number(((age / earthOrbitPeriod) / planetsOrbitPeriod[planet]).toFixed(precision));
 
 export { age };
