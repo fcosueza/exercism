@@ -1,8 +1,11 @@
-//
-// This is only a SKELETON file for the 'etl' exercise. It's been provided as a
-// convenience to get you started writing code faster.
-//
+const transform = oldSystem => {
+  let newSystem = {};
 
-export const transform = () => {
-  throw new Error("Remove this statement and implement this function");
+  for (let score in oldSystem) {
+    oldSystem[score].forEach(letter => (newSystem[letter.toLowerCase()] = Number(score)));
+  }
+
+  return newSystem;
 };
+
+export { transform };
