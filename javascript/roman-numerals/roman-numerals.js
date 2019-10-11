@@ -16,7 +16,10 @@ const ROMAN = [
 
 const toRoman = number =>
   ROMAN.reduce(
-    (acc, curr) => [acc[0] + curr[0].repeat(acc[1] / curr[1]), acc[1] % curr[1]],
+    (acc, curr) => [
+      acc[0] + curr[0].repeat(acc[1] / curr[1]),
+      acc[1] % curr[1]
+    ],
     ["", number]
   )[0];
 
