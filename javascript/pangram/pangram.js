@@ -3,7 +3,7 @@ const isPangram = string => {
 
   const alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-  return [...alphabet].every(letter => string.includes(letter));
+  return [...alphabet].every(letter => string.toLowerCase().includes(letter));
 };
 
 export { isPangram };
