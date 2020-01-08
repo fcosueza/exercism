@@ -27,7 +27,7 @@ Install assignment dependencies:
 ```bash
 $ npm install
 ```
-
+i
 ## Making the test suite pass
 
 Execute the tests with:
@@ -40,12 +40,7 @@ In the test suites all tests but the first have been skipped.
 
 Once you get a test passing, you can enable the next one by changing `xtest` to
 `test`.
-
+i
 ## Source
 
 Wikipedia [https://en.wikipedia.org/wiki/Isogram](https://en.wikipedia.org/wiki/Isogram)
-
-## Submitting Incomplete Solutions
-
-It's possible to submit an incomplete solution so you can see how others have
-completed the exercise.
