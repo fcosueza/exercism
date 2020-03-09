@@ -1,4 +1,4 @@
-export const primeFactors = n => {
+const primeFactors = n => {
   let factors = [];
 
   for (let div = 2; n > 1; div++)
@@ -9,3 +9,5 @@ export const primeFactors = n => {
 
   return factors;
 };
+
+export { primeFactors };
