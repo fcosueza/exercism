@@ -8,6 +8,7 @@ Note that 1 is not a prime number.
 
 ## Example
 
+
 What are the prime factors of 60?
 
 - Our first divisor is 2. 2 goes into 60, leaving 30.
@@ -44,6 +45,7 @@ Install assignment dependencies:
 $ npm install
 ```
 
+
 ## Making the test suite pass
 
 Execute the tests with:
@@ -57,11 +59,8 @@ In the test suites all tests but the first have been skipped.
 Once you get a test passing, you can enable the next one by changing `xtest` to
 `test`.
 
+
+
 ## Source
 
 The Prime Factors Kata by Uncle Bob [http://butunclebob.com/ArticleS.UncleBob.ThePrimeFactorsKata](http://butunclebob.com/ArticleS.UncleBob.ThePrimeFactorsKata)
-
-## Submitting Incomplete Solutions
-
-It's possible to submit an incomplete solution so you can see how others have
-completed the exercise.
