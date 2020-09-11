@@ -1,5 +1,15 @@
 export function solve(x, y) {
   let radius = Math.sqrt(x * x + y * y); // Pythagorean theorem
 
-  return radius <= 1 ? 10 : radius <= 5 ? 5 : radius <= 10 ? 1 : 0;
+  let points = 0;
+
+  if (radius <= 1) {
+    points = 10;
+  } else if (radius <= 5) {
+    points = 5;
+  } else if (radius <= 10) {
+    points = 1;
+  }
+
+  return points;
 }
