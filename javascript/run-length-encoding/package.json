@@ -33,6 +33,7 @@
   "license": "MIT",
   "dependencies": {
     "minimist": ">=1.2.2",
-    "kind-of": ">=6.0.3"
+    "kind-of": ">=6.0.3",
+    "node-notifier": ">=8.0.1"
   }
 }
