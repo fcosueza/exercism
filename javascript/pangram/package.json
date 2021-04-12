@@ -9,7 +9,7 @@
     "url": "https://github.com/exercism/javascript"
   },
   "devDependencies": {
-    "@babel/cli": "^7.5.5",
+    "@babel/cli": "^7.13.14",
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "@types/jest": "^24.0.16",
@@ -35,6 +35,7 @@
   "dependencies": {
     "minimist": ">=1.2.3",
     "acorn": ">=7.1.1",
-    "kind-of": ">=6.0.3"
+    "kind-of": ">=6.0.3",
+    "node-notifier": ">=8.0.1"
   }
 }
