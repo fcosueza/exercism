@@ -50,41 +50,41 @@ describe("Clock", () => {
       expect(new Clock(-1, 15).toString()).toEqual("23:15");
     });
 
-    xtest("negative hour rolls over", () => {
+    test("negative hour rolls over", () => {
       expect(new Clock(-25, 0).toString()).toEqual("23:00");
     });
 
-    xtest("negative hour rolls over continuously", () => {
+    test("negative hour rolls over continuously", () => {
       expect(new Clock(-91, 0).toString()).toEqual("05:00");
     });
 
-    xtest("negative minutes", () => {
+    test("negative minutes", () => {
       expect(new Clock(1, -40).toString()).toEqual("00:20");
     });
 
-    xtest("negative minutes rolls over", () => {
+    test("negative minutes rolls over", () => {
       expect(new Clock(1, -160).toString()).toEqual("22:20");
     });
 
-    xtest("negative minutes rolls over continuously", () => {
+    test("negative minutes rolls over continuously", () => {
       expect(new Clock(1, -4820).toString()).toEqual("16:40");
     });
 
-    xtest("negative sixty minutes is previous hour", () => {
+    test("negative sixty minutes is previous hour", () => {
       expect(new Clock(2, -60).toString()).toEqual("01:00");
     });
 
-    xtest("negative hour and minutes both roll over", () => {
+    test("negative hour and minutes both roll over", () => {
       expect(new Clock(-25, -160).toString()).toEqual("20:20");
     });
 
-    xtest("negative hour and minutes both roll over continuously", () => {
+    test("negative hour and minutes both roll over continuously", () => {
       expect(new Clock(-121, -5810).toString()).toEqual("22:10");
     });
   });
 
   describe("Adding minutes", () => {
-    xtest("add minutes", () => {
+    test("add minutes", () => {
       expect(new Clock(10, 0).plus(3).toString()).toEqual("10:03");
     });
 
@@ -122,7 +122,7 @@ describe("Clock", () => {
       expect(new Clock(10, 3).minus(3).toString()).toEqual("10:00");
     });
 
-    xtest("subtract to previous hour", () => {
+    test("subtract to previous hour", () => {
       expect(new Clock(10, 3).minus(30).toString()).toEqual("09:33");
     });
 
