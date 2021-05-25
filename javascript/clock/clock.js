@@ -34,9 +34,6 @@ export class Clock {
   }
 
   equals(clock) {
-    return (
-      this.getTime().hours === clock.getTime().hours &&
-      this.getTime().minutes === clock.getTime().minutes
-    );
+    return this.toString() == clock.toString();
   }
 }
