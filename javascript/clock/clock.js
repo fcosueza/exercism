@@ -3,15 +3,11 @@ export class Clock {
     this.minutes = minutes + hours * 60;
   }
 
-  getMinutes() {
-    return this.minutes;
-  }
-
   normalize() {
     let hours = Math.floor((this.minutes / 60) % 24);
     let minutes = Math.floor(this.minutes % 60);
 
-    hours = hours >= 0 ? hours : 24 - (Math.abs(hours) % 24);
+    hours = hours >= 0 ? hours : (24 - (Math.abs(hours) % 24)) % 24;
     minutes = minutes >= 0 ? minutes : 60 - (Math.abs(minutes) % 60);
 
     return { hours, minutes };
@@ -38,6 +34,9 @@ export class Clock {
   }
 
   equals(clock) {
-    return this.minutes === clock.getMinutes();
+    return (
+      this.normalize().hours === clock.normalize().hours &&
+      this.normalize().minutes === clock.normalize().minutes
+    );
   }
 }
