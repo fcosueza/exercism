@@ -7,7 +7,7 @@ export class Clock {
     let hours = Math.floor((this.minutes / 60) % 24);
     let minutes = Math.floor(this.minutes % 60);
 
-    hours = hours >= 0 ? hours : (24 - (Math.abs(hours) % 24)) % 24;
+    hours = hours >= 0 ? hours : (24 - Math.abs(hours)) % 24;
     minutes = minutes >= 0 ? minutes : 60 - (Math.abs(minutes) % 60);
 
     return { hours, minutes };
