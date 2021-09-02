@@ -9,7 +9,7 @@
     "url": "https://github.com/exercism/javascript"
   },
   "devDependencies": {
-    "@babel/cli": "^7.13.14",
+    "@babel/cli": "^7.12.1",
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "@types/jest": "^24.0.16",
@@ -33,8 +33,9 @@
   },
   "license": "MIT",
   "dependencies": {
+    "glob-parent": ">=5.1.2",
     "minimist": ">=1.2.2",
     "node-notifier": ">=8.0.1",
-    "glob-parent": ">=5.1.2"
+    "path-parse": ">=1.0.7"
   }
 }
