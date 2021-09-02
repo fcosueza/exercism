@@ -36,6 +36,7 @@
     "glob-parent": ">=5.1.2",
     "minimist": ">=1.2.2",
     "node-notifier": ">=8.0.1",
-    "path-parse": ">=1.0.7"
+    "path-parse": ">=1.0.7",
+    "glob-parent": ">=5.1.2"
   }
 }
