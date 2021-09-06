@@ -29,7 +29,7 @@ const preparationTimeInMinutes = numberOfLayers =>
  * @returns {number} the total working time
  */
 const totalTimeInMinutes = (numberOfLayers, actualMinutesInOven) =>
-  numberOfLayers * PREPARATION_MINUTES_PER_LAYER + actualMinutesInOven;
+  preparationTimeInMinutes(numberOfLayers) + actualMinutesInOven;
 
 export {
   EXPECTED_MINUTES_IN_OVEN,
