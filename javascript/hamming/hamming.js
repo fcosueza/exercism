@@ -1,8 +1,14 @@
-//
-// This is only a SKELETON file for the 'Hamming' exercise. It's been provided as a
-// convenience to get you started writing code faster.
-//
+const compute = (dna1, dna2) => {
+  if (dna1.length !== dna2.length)
+    throw new Error("left and right strands must be of equal length");
 
-export const compute = () => {
-  throw new Error('Remove this statement and implement this function');
+  let hammingDistance = 0;
+
+  for (let i = 0; i < dna1.length; i++) {
+    if (dna1[i] !== dna2[i]) hammingDistance++;
+  }
+
+  return hammingDistance;
 };
+
+export default compute;
