@@ -18,4 +18,4 @@ const compute = (dna1, dna2) => {
   return hammingDistance;
 };
 
-export default compute;
+export { compute };
