@@ -33,13 +33,13 @@ describe("Hamming", () => {
     );
   });
 
-  xtest("disallow left empty strand", () => {
+  test("disallow left empty strand", () => {
     expect(() => compute("", "G")).toThrow(
       new Error("left strand must not be empty")
     );
   });
 
-  xtest("disallow right empty strand", () => {
+  test("disallow right empty strand", () => {
     expect(() => compute("G", "")).toThrow(
       new Error("right strand must not be empty")
     );
