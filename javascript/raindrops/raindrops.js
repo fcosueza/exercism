@@ -12,7 +12,7 @@ const convert = number => {
     if (number % curr === 0) return acc + dropSound[curr];
 
     return acc;
-  }, "");
+  }, result);
 
   return result ? result : number.toString();
 };
