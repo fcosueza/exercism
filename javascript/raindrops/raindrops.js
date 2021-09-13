@@ -5,10 +5,10 @@ const dropSound = {
 };
 
 const convert = number => {
-  let soundsArray = Object.keys(dropSound);
+  let factorArray = Object.keys(dropSound);
   let result = "";
 
-  result = soundsArray.reduce(
+  result = factorArray.reduce(
     (acc, curr) => (number % curr ? acc : acc + dropSound[curr]),
     result
   );
