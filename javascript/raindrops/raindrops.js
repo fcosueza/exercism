@@ -1,19 +1,20 @@
-const sound = {
+const dropSound = {
   3: "Pling",
   5: "Plang",
   7: "Plong"
 };
 
 const convert = number => {
+  let soundsArray = Object.keys(dropSound);
   let result = "";
 
-  if (number % 3 === 0) result += sound[3];
-  if (number % 5 === 0) result += sound[5];
-  if (number % 7 === 0) result += sound[7];
+  result = soundsArray.reduce((acc, curr) => {
+    if (number % curr === 0) return acc + dropSound[curr];
 
-  if (!result) result = number.toString();
+    return acc;
+  }, "");
 
-  return result;
+  return result ? result : number.toString();
 };
 
 export { convert };
