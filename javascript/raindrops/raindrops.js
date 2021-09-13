@@ -14,7 +14,7 @@ const convert = number => {
     return acc;
   }, result);
 
-  return result ? result : number.toString();
+  return result || number.toString();
 };
 
 export { convert };
