@@ -1,5 +1,10 @@
 # Collatz Conjecture
 
+Welcome to Collatz Conjecture on Exercism's JavaScript Track.
+If you need help running the tests or submitting your code, check out `HELP.md`.
+
+## Instructions
+
 The Collatz Conjecture or 3x+1 problem can be summarized as follows:
 
 Take any positive integer n. If n is even, divide n by 2 to get n / 2. If n is
@@ -26,34 +31,15 @@ Starting with n = 12, the steps would be as follows:
 
 Resulting in 9 steps. So for input n = 12, the return value would be 9.
 
-## Setup
-
-Go through the setup instructions for Javascript to install the necessary
-dependencies:
-
-[https://exercism.io/tracks/javascript/installation](https://exercism.io/tracks/javascript/installation)
-
-## Requirements
-
-Install assignment dependencies:
-
-```bash
-$ npm install
-```
-
-## Making the test suite pass
-
-Execute the tests with:
-
-```bash
-$ npm test
-```
-
-In the test suites all tests but the first have been skipped.
-
-Once you get a test passing, you can enable the next one by changing `xtest` to
-`test`.
-
 ## Source
 
-An unsolved problem in mathematics named after mathematician Lothar Collatz [https://en.wikipedia.org/wiki/3x_%2B_1_problem](https://en.wikipedia.org/wiki/3x_%2B_1_problem)
+### Contributed to by
+
+- @ankorGH
+- @rchavarria
+- @SleeplessByte
+- @xarxziux
+
+### Based on
+
+An unsolved problem in mathematics named after mathematician Lothar Collatz - https://en.wikipedia.org/wiki/3x_%2B_1_problem
