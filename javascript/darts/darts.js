@@ -1,15 +1,11 @@
+
+/*
+ * This function calculate the distance from the given point (x, y) to the
+ * center of the target and return the assigned points for that distance.
+ */
+
 export function solve(x, y) {
-  let radius = Math.sqrt(x * x + y * y); // Pythagorean theorem
+  let radius = Math.sqrt((x * x) + (y * y)); // Pythagorean theorem
 
-  let points = 0;
-
-  if (radius <= 1) {
-    points = 10;
-  } else if (radius <= 5) {
-    points = 5;
-  } else if (radius <= 10) {
-    points = 1;
-  }
-
-  return points;
+  return (radius <= 1) ? 10 : (radius <= 5) ? 5 : (radius <= 10) ? 1 : 0;
 }
