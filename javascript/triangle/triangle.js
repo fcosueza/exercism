@@ -4,24 +4,22 @@ class Triangle {
   }
 
   isValid() {
-    return !(
-      this.sides[0] <= 0 || this.sides[0] + this.sides[1] < this.sides[2]
-    );
+    return !(this.sides[0] <= 0 || this.sides[0] + this.sides[1] < this.sides[2]);
   }
 
   kind() {
     if (!this.isValid()) {
-      throw Error("Invalid triangle !!");
+      throw Error("Invalid triangle !!")
     }
 
     let tempSet = new Set(this.sides);
-
+    
     if (tempSet.size === 1) {
-      return "equilateral";
+      return 'equilateral';
     } else if (tempSet.size === 2) {
-      return "isosceles";
+      return 'isosceles';
     } else {
-      return "scalene";
+      return 'scalene';
     }
   }
 }
