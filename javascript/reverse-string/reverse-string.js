@@ -1,7 +1,5 @@
-let reverseString = string =>
-  string
-    .split("")
-    .reverse()
-    .join("");
+/* Reverse a String */
 
-export { reverseString };
+let reverseString = string => string.split('').reverse().join('')
+
+export { reverseString }
